@@ -17,6 +17,8 @@ inputSlider.addEventListener('input', ()=>{
 
 genBtn.addEventListener('click', ()=>{
     passBox.value = generatePassword();
+
+    // passBox.value='';
 })
 
 let lowerChars = "abcdefghijklmnopqrstuvwxyz";
@@ -34,7 +36,7 @@ function generatePassword(){
     allChars  += numbers.checked ? allNumbers : "";
     allChars  += symbols.checked ? allSymbols : "";
 
-console.log(allChars);
+// console.log(allChars);
     if(allChars == "" || allChars.length == 0){
         return genPassword;
     }
